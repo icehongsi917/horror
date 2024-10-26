@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <style>
+        * {
+            text-align: left;
+            color: red;
+            background-color: black;
+        }
+
+        body {
+            height: 100vh;
+            background-size: cover;
+            align-items: center;
+            cursor: default; /* 기본 커서 */
+        }
+
+        .sch_smit {
+            width: 54px;
+            height: 40px;
+            margin: 0;
+            bottom: 0;
+            background-color: #8b0000;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .sch_smit:hover {
+            background-color: red;
+        }
+
+        .bgimg {
+            background-image: url('');
+
+        }
+
+        div {
+            height: 40px;
+            width: 450px;
+            border: 1px solid #8b0000
+        }
+
+        input {
+            font-size: 16px;
+            width: 350px;
+            padding: 10px;
+
+            border: 0;
+
+            outline: none;
+        }
+
+        button {
+            width: 65px;
+            height: 100%;
+            border: 0;
+            background-color: #8b0000;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            float: right;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8b0000ab;
+        }
+
+        p {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        h3 {
+            color: rgba(0, 0, 0, 0);
+            text-align: right;
+            cursor: pointer;
+
+            background-color: rgba(0, 0, 0, 0);
+
+            cursor: help;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <input type="text" placeholder="Starts.">
+        <a href="not here.html">
+            <button>Search</button>
+        </a>
+    </div>
+
+
+    <a href="next.html" style="display: inline-block";>
+        <p onclick="alert('Message received from HosExoLLmaP.kr!')">Retry</p>
+    </a>
+    <br>
+    <h3 onclick="changeBackground()" style="display: inline-block">190827</h3>
+
+    <audio id="clickSound" src="비명.mp3"></audio>
+
+    <script>
+        let currentImage = 1; // 현재 이미지 상태
+
+        function changeBackground() {
+            const audio = document.getElementById('clickSound'); // 오디오 요소 가져오기
+            audio.play();        
+
+            if (currentImage === 1) {
+                document.body.style.backgroundImage = "url('너.gif')"; // 이미지 2로 변경
+                currentImage = 2; // 상태 변경
+            } else {
+                document.body.style.backgroundImage = "url('너.gif')"; // 이미지 1로 변경
+                currentImage = 1; // 상태 변경
+            }
+        }
+    </script>
+</body>
+
+</html>
